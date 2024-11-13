@@ -20,7 +20,8 @@
 
 html {
     font-size: 100%;
-    scroll-behavior: smooth
+    scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -11006,7 +11007,8 @@ header.style-6 .main-menu .hotline-area .content h6 a {
 }
 
 .banner-section2 {
-    position: relative
+    position: relative;
+    overflow: hidden;
 }
 
 .banner-section2 .banner2-swiper-pagination {
