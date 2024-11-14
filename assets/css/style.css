@@ -10460,20 +10460,19 @@ header.style-6 .main-menu .hotline-area .content h6 a {
 }
 
 .search-bar .filter-wrap form {
-    display: flex;
+    display: block  ;
     align-items: center;
-    gap: 12px;
     border-radius: 5px;
     border: 1px solid rgba(239, 185, 63, .2);
     background: #1f1f1f;
-    padding: 8px 15px;
-    max-width: 970px;
+    padding: 30px 30px;
+    max-width: 669px;
     width: 100%
 }
 
 @media(max-width:1499px) {
     .search-bar .filter-wrap form {
-        max-width: 930px
+        max-width: 669px;
     }
 }
 
@@ -10546,14 +10545,15 @@ header.style-6 .main-menu .hotline-area .content h6 a {
     color: rgba(255, 255, 255, .8)
 }
 
-.search-bar .filter-wrap form .form-inner:first-child {
-    max-width: 225px;
-    min-width: 225px
+.search-bar .filter-wrap form .form-inner:not(:last-child) {
+    max-width: 100%;
+    min-width: 225px;
+    padding-bottom: 70px !important;
 }
 
 @media(max-width:1499px) {
     .search-bar .filter-wrap form .form-inner:first-child {
-        max-width: 185px;
+        max-width: 100%;
         min-width: 185px
     }
 }
@@ -10567,7 +10567,14 @@ header.style-6 .main-menu .hotline-area .content h6 a {
 
 @media(max-width:991px) {
     .search-bar .filter-wrap form .form-inner:first-child {
-        width: 100%
+        width: 100%;
+        padding-bottom: 20px !important;
+
+    }
+}
+@media(max-width:991px) {
+    .search-bar .filter-wrap form .form-inner:not(:first-child) {
+        padding-bottom: 20px !important;
     }
 }
 
@@ -32147,4 +32154,5 @@ button {
     font-style: italic;
     font-weight: 600;
     padding: 12px 0;
+    line-height: 1.5;
 }
