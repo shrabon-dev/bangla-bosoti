@@ -15,7 +15,7 @@
     --black-color2: #1D1D1D;
     --title-color: #16191E;
     --text-color: #5E5E5E;
-    --primary-color1: #EFB93F
+    --primary-color1: #BBA460;
 }
 
 html {
@@ -4090,10 +4090,13 @@ header.style-2.sticky {
         transform: translateY(0px)
     }
 }
-
+.mobile-logo-wrap a img{
+    max-width: 70%;
+    margin-left: 20px;
+}
 @media(max-width:576px) {
     header.style-2 .header-logo img {
-        max-width: 165px;
+        max-width: 90px;
         width: 100%
     }
 }
@@ -9812,8 +9815,8 @@ header.style-6 .main-menu .hotline-area .content h6 a {
 }
 
 .sidebar-menu .menu-close-btn {
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 55px;
     border-radius: 50%;
     background-color: var(--primary-color1);
     display: flex;
